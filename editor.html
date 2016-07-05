@@ -1,0 +1,15 @@
+<div>
+    <a href="#/preview">预览</a>
+    <ul>
+        <li ng-repeat="x in items">
+            <input type={{x.type}} /><button ng-click="deleteitem($index)">delete</button>
+        </li>
+    </ul>
+    <button ng-click="toggle1()">add</button>
+    <div ng-show="alertShow">
+        <div><input type="radio" name="type" value="text">text
+            <input type="radio" name="type" value="date">date</div>
+        <button ng-click="addItem()">submit</button>
+        <button ng-click="toggle1()">exit</button>
+    </div>
+</div>
